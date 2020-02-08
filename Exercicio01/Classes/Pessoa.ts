@@ -1,6 +1,6 @@
 namespace empresa{
     
-    class Pessoa {
+    export class Pessoa {
         private _nome: string|undefined;
         private _cpf: string;
         private _dtNascimento: string|undefined;
