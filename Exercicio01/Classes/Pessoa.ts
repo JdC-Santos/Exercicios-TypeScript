@@ -5,7 +5,8 @@ namespace empresa{
         private _cpf: string;
         private _dtNascimento: string|undefined;
 
-        constructor(cpf:string){
+        constructor(nome:string, cpf:string){
+            this._nome = nome;
             this._cpf = cpf;
         }
 
@@ -29,5 +30,4 @@ namespace empresa{
             this._dtNascimento = dt;
         }
     }
-
 }
