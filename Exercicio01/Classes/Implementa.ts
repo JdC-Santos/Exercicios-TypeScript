@@ -3,4 +3,6 @@ namespace empresa{
     p.setDtNascimento("1993-02-14");
 
     document.getElementById('nome').textContent = p.getNome();
+    document.getElementById('cpf').textContent = p.getCpf();
+    document.getElementById('dtNasc').textContent = p.getDtNascimento();
 }
