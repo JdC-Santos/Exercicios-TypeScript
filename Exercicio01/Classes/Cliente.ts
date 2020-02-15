@@ -1,9 +1,14 @@
 namespace empresa {
 
-    class Cliente extends Pessoa{
+    export class Cliente extends Pessoa{
         private _saldo: Number|undefined;
         private _limit: Number|undefined;
         private _cdCliente: Number|undefined;
+
+        constructor(nome:string, cpf:string, cod:Number){
+            super(nome, cpf);
+            this._cdCliente = cod;
+        }
 
         getSaldo():Number|undefined{
             return this._saldo;
