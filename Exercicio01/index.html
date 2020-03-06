@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<style>
+    body{
+        background:#222;
+    }
+    h4,h2,span{
+        color:#35b
+    }
+</style>   
 <body>
     <div class="container">
         <div class="row">
@@ -26,12 +34,53 @@
                 <h4>Data de Nascimento: <span id="cli_dtNasc"></span></h4>
                 <h4>Limite: <span id="cli_limit"></span></h4>
                 <h4>Saldo: <span id="cli_saldo"></span></h4>
-                
             </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Funcionario: </h2>
+                <h4>codigo: <span id="f_codigo"></span></h4>
+                <h4>Nome: <span id="f_nome"></span></h4>
+                <h4>Cpf: <span id="f_cpf"></span></h4>
+                <h4>Data de Nascimento: <span id="f_dtNascimento"></span></h4>
+                <h4>valor dia: <span id="f_vl_dia"></span></h4>
+            </div>
+
+            <div class="col-sm-6">
+                <h2>Gerente: <span id="g_nome"></span></h2>
+                <h4>codigo: <span id="g_codigo"></span></h4>
+                <h4>Cpf: <span id="g_cpf"></span></h4>
+                <h4>Data de Nascimento: <span id="g_dtNascimento"></span></h4>
+                <h4>valor dia: <span id="g_vl_dia"></span></h4>
+                <h4>setor: <span id="g_setor"></span></h4>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Empresa:<span id="e_nome"> </h2>
+                <h4>Atividade: <span id="e_atividade"></span></h4>
+                <h4>Cidade: <span id="e_cidade"></span></h4>
+                <hr>
+                <div id="emp_func">
+                   <h4>FUNCIONARIOS DA EMPRESA</h4>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h2>Cod. Filial: <span id="fi_codigo"></span></h2>
+                <h4>Cidade: <span id="fi_cidade"></span></h4>
+            </div>
+
         </div>
     </div>
     <script src="Classes/Pessoa.js"></script>
     <script src="Classes/Cliente.js"></script>
+    <script src="Classes/Funcionario.js"></script>
+    <script src="Classes/Gerente.js"></script>
+    <script src="Classes/Empresa.js"></script>
+    <script src="Classes/Filial.js"></script>
     <script src="Classes/Implementa.js"></script>
 </body>
 </html>

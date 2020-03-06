@@ -1,7 +1,12 @@
 namespace empresa {
-    class Gerente extends  Funcionario{
+    export class Gerente extends Funcionario{
+
         private _setor:string;
-        
+
+        constructor(nome:string, cpf:string){
+            super(nome, cpf);
+        }
+
         getSetor():string{
             return this._setor;
         }

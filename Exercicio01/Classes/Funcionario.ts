@@ -3,11 +3,15 @@ namespace empresa {
         private _cdFuncionario: Number;
         private _valorDia:number;
 
+        constructor(nome:string, cpf:string){
+            super(nome, cpf);
+        }
+
         getCdFuncionario():Number{
             return this._cdFuncionario;
         }
 
-        setFuncionario(cd:Number):void{
+        setCdFuncionario(cd:Number):void{
             this._cdFuncionario = cd;
         }
 
